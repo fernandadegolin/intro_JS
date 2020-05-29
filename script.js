@@ -14,7 +14,10 @@ var tipoBooleano = true;
 
 
 var tudoJunto = (tipoString + (', ') + tipoNumero);
-var tudoMisturado = (tipoFloat == 49);
+var tudoMisturado = (tipoFloat == tipoNumoro);
 
+
+// Aqui você pode brincar com os resultados que quer ver.
+console.log(tudoJunto);
 console.log(tudoMisturado);
 
