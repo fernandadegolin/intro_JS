@@ -5,6 +5,6 @@
 O intuíto é desenvolver exercícios e ajudar na fixação de aprendizado</p>
 
 <ul>
-  <li>Variáveis e Dados</li>
+  <li><b>Variáveis e Dados</b></li>
 
 </ul>
