@@ -1,20 +1,20 @@
 // tipo de variaveis
 
 // string
-var tipoString = 'Rua dos Gigantes';
+let tipoString = 'Rua dos Gigantes';
 
 // número
-var tipoNumero = 206;
+let tipoNumero = 206;
 
 // float - decimal
-var tipoFloat = 49.5;
+let tipoFloat = 49.5;
 
 // booleanos (true/falso) 
-var tipoBooleano = true;
+let tipoBooleano = true;
 
 
-var tudoJunto = (tipoString + (', ') + tipoNumero);
-var tudoMisturado = (tipoFloat == 49);
+let tudoJunto = (tipoString + (', ') + tipoNumero);
+let tudoMisturado = (tipoFloat == 49);
 
 console.log(tudoJunto);
 console.log(tudoMisturado);
