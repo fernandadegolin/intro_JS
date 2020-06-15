@@ -7,5 +7,6 @@ O intuíto é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
 
 <ul>
   <li><b>Variáveis e Dados</b></li>
+  <li><b>Adicionar e Remover Classes</b></li>
 
 </ul>
