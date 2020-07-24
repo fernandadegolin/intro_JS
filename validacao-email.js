@@ -1,55 +1,50 @@
-/* 
-    1) Validar email 
-        1.1) Alert de email invalido 
-        1.2) Alert de email enviado com sucesso
-            1.1.1) Mensagem "Damos boas vindas a:$(email)
+<html>
 
-    2) Click no Menu
-        1.1) Alert de pagina em construção
+<head></head>
 
-*/
+<body>
 
+    <form>
+        <input type="email" id="email" class="input-padrao" onblur="checarEmail()" 
+            placeholder="Coloque seu e-mail para contato! 🙂" value="">
+        <button type="button" id="enviar" class="enviar" value="enviar">Enviar</button>
+    </form>
 
-// 1) Validar email
+    <!-- INICIO DO JAVASCRPIT -->
 
+    <script>
 
+        function checarEmail() {
 
-// 1.2) Alert email enviado com sucesso
-//  1.1.1) Mensagem de boas vindas
-let mensagem = document.querySelector('.enviar');
-    mensagem.addEventListener('click', boasVindas);
+// MODELO 1 - Usando document.forms
+        if (document.forms[0].email.value == ""
+            || document.forms[0].email.value.indexOf('@') == -1
+                || document.forms[0].email.value.indexOf('.') == -1) {
+            
+            console.log("Por favor, informe um E-MAIL válido!");
+
+        } else {
+            console.log('Email enviado com Sucesso')
+        }
+
+// MODELO 2 - Usando document.getElementByid
+
+        // let validarEmail = document.getElementById('email').value;
+
+        //if (validarEmail == "" 
+        //  || validarEmail.indexOf('@') ==-1 
+        //    || validarEmail.indexOf('.') ==-1){
+
+        //    console.log('PORRA EMAIL ERRADO CARA!');
+
+        //} else{
+        //    console.log('UHULLLLL BICHO!')
+        //} */
     
-    function boasVindas(){
-        
-        let email = document.getElementById('email').value;
-
-        let mensagemBoasVindas = document.getElementById('boasVindas');
-        mensagemBoasVindas.innerHTML = `Damos Boas Vidas a ${email}`;
-
-        alert(`Email: ${email} enviado com sucesso.`)
-        console.log('Com amigas assim, não ha JS que resista')
-    };
-
-
-
-
-    
-
-
-
-
-
-
-// 2) Click Menu
-
-/* MODELO 1 */
-document.querySelector('.home').addEventListener('click', construcao);
-
-function construcao(){ 
-    alert('Página em construção');
+        document.getElementById('email').value = '';
 }
 
-/* MODELO 2 */
-//Usando o evento onclick no html
+    </script>
+</body>
 
-
+</html>
