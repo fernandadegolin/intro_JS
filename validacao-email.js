@@ -3,7 +3,6 @@
 <head></head>
 
 <body>
-
     <form>
         <input type="email" id="email" class="input-padrao" onblur="checarEmail()" 
             placeholder="Coloque seu e-mail para contato! 🙂" value="">
