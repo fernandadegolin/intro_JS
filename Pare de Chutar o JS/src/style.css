@@ -1,0 +1,21 @@
+:root{
+    --bg: #1E4E59;
+    --title: #618C8C;
+    --paragraph: #BFD9D6;
+    #2D7352
+    #72A68E
+
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg);    
+}
+
+h1{
+    color: var(--title);
+}
+
+p{
+    color: var(--paragraph);
+}
