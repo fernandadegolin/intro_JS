@@ -2,8 +2,8 @@
     --bg: #1E4E59;
     --title: #618C8C;
     --paragraph: #BFD9D6;
-    #2D7352
-    #72A68E
+    --box: #2D7352;
+    --box1: #72A68E;
 
 }
 
@@ -18,4 +18,19 @@ h1{
 
 p{
     color: var(--paragraph);
+}
+
+#area{
+    background: var(--box);
+    color: var(--paragraph);
+    width: 10em;
+    height: 7em;
+    border-radius: 1em;
+    /* text-transform: uppercase; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+
 }
