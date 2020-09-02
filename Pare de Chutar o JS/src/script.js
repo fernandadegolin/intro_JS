@@ -11,13 +11,12 @@
 // let resultado = n1 === n2 ? 'LOGICO QUE NAO' : 'OPA é SIM';
 
 
-/* Testanto os SELETORES */
+/* ========== Testanto os SELETORES ========== */
 // let p1 = document.getElementsByTagName('h1');
 // document.write(`${p1.innerHTML} <=`)
 
 
-/* Testando EVENTOS */
-
+/* ========== Testando EVENTOS ========== */
 let a = document.getElementById('area');
 a.addEventListener('click', clicar)
 a.addEventListener('mouseenter', entrar)
@@ -38,3 +37,21 @@ function sair() {
     a.style.color = "var(--paragraph)";
 }
 
+/* ========== Testando OPERADORES ========== */
+
+let button = document.getElementById('button');
+    button.addEventListener ('click', somar);
+
+function somar (){
+    let tn1 = document.getElementById ('txtn1');
+    let tn2 = document.getElementById ('txtn2');
+    let tn3 = document.getElementById ('txtn3')
+    let n1 = Number (tn1.value);
+    let n2 = Number (tn2.value);
+    let n3 = Number (tn3.value);
+    let soma = n1 + n2 - n3;
+    
+    let res = document.getElementById ('res');
+        res.innerHTML = `Soma total: <strong>${soma}</strong>!`
+
+}

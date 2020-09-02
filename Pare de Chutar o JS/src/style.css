@@ -14,6 +14,19 @@ body{
 
 h1{
     color: var(--title);
+    text-align: center;
+}
+
+h3{
+    color: var(--box1);
+    margin-top: 3em;
+    
+    
+}
+
+h4{
+    font-weight: bold;
+    color: var(--title);
 }
 
 p{
@@ -32,5 +45,13 @@ p{
     justify-content: center;
     font-weight: 600;
     text-align: center;
+}
 
+#res{
+    border: solid 1px var(--box1);
+    border-radius: 2em;
+    color: var(--paragraph);
+    width: 15%;
+    margin-top: 1em;
+    text-align: center;
 }
