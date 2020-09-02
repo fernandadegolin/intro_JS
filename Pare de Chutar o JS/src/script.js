@@ -18,21 +18,23 @@
 
 /* Testando EVENTOS */
 
-
 let a = document.getElementById('area');
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
 
-function clicar(){
+function clicar() {
     a.innerText = 'Gosto do seu clique!'
 }
 
-function entrar(){
+function entrar() {
     a.innerHTML = "Oi Sumido!"
-    a.style.background="#618C8C";
+    a.style.background = "#618C8C";
 }
 
-function sair(){
+function sair() {
     a.innerHTML = "Fica vai ter bolo!"
-    a.style.background= "#72A68E";
-    a.style.color="var(--paragraph)";
+    a.style.background = "#72A68E";
+    a.style.color = "var(--paragraph)";
 }
 
