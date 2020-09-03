@@ -24,6 +24,7 @@ a.addEventListener('mouseout', sair)
 
 function clicar() {
     a.innerText = 'Gosto do seu clique!'
+    a.style.background = "var(--bg)"
 }
 
 function entrar() {
@@ -40,18 +41,45 @@ function sair() {
 /* ========== Testando OPERADORES ========== */
 
 let button = document.getElementById('button');
-    button.addEventListener ('click', somar);
+button.addEventListener('click', somar);
 
-function somar (){
-    let tn1 = document.getElementById ('txtn1');
-    let tn2 = document.getElementById ('txtn2');
-    let tn3 = document.getElementById ('txtn3')
-    let n1 = Number (tn1.value);
-    let n2 = Number (tn2.value);
-    let n3 = Number (tn3.value);
+function somar() {
+    let tn1 = document.getElementById('txtn1');
+    let tn2 = document.getElementById('txtn2');
+    let tn3 = document.getElementById('txtn3');
+    let n1 = Number(tn1.value);
+    let n2 = Number(tn2.value);
+    let n3 = Number(tn3.value);
     let soma = n1 + n2 - n3;
-    
-    let res = document.getElementById ('res');
-        res.innerHTML = `Soma total: <strong>${soma}</strong>!`
 
+    let res = document.getElementById('res');
+    res.innerHTML = `Soma total: <strong>${soma}</strong>`
+
+
+    tn1.value = "";
+    tn2.value = "";
+    tn3.value = "";
 }
+
+/* ========== Testando CONDICOES ========== */
+
+let botao = document.getElementById('medir');
+botao.addEventListener('click', medir);
+
+function medir() {
+
+    let resultado = document.getElementById('vel');
+    let velocidade = document.getElementById('velocidade').value;
+        
+
+    if (velocidade > 60) {
+        resultado.innerHTML = `Velocidade de ${velocidade}Km/h <br> 
+        Você está sendo <strong>MULTADO</strong> por excesso de velocidade!`
+    } else {
+        resultado.innerHTML = `Velocidade de ${velocidade}Km/h.`
+    }
+
+    velocidade.value = "";
+}
+
+

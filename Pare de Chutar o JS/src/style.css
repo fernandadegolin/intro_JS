@@ -10,6 +10,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     background: var(--bg);    
+    box-sizing: border-box;
 }
 
 h1{
@@ -47,11 +48,12 @@ p{
     text-align: center;
 }
 
+#vel,
 #res{
     border: solid 1px var(--box1);
     border-radius: 2em;
     color: var(--paragraph);
-    width: 15%;
+    width: 30%;
     margin-top: 1em;
     text-align: center;
 }
