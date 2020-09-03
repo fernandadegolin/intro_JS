@@ -13,9 +13,18 @@ body{
     box-sizing: border-box;
 }
 
+.border{
+    border: solid 1px var(--title);
+    margin: .5em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
 h1{
-    color: var(--title);
+    color: var(--paragraph);
+    font-size: 1.5em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h3{
@@ -48,12 +57,14 @@ p{
     text-align: center;
 }
 
+#results,
 #vel,
 #res{
     border: solid 1px var(--box1);
     border-radius: 2em;
     color: var(--paragraph);
     width: 30%;
+    height: auto;
     margin-top: 1em;
     text-align: center;
 }
