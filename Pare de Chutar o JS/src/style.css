@@ -64,7 +64,6 @@ p{
     border-radius: 2em;
     color: var(--paragraph);
     width: 30%;
-    height: auto;
     margin-top: 1em;
     text-align: center;
 }

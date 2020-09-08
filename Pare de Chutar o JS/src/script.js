@@ -92,12 +92,11 @@ function nacao () {
     let pais = document.getElementById ('pais').value;
     let nacionalidade = document.getElementById ('results');
 
-    if (pais === "Brasil" || "brasil"){
+    if (pais === "Brasil"){
         nacionalidade.innerHTML = `Você mora no ${pais} e tem saudade da nossa ex... presidente DILMA!`
     } else {
-        nacionalidade.innerHTML = `${pais} e tem sorte de não ter Bolsonaro de presidente!`
+        nacionalidade.innerHTML = `Seu pais é ${pais} e tem sorte de não ter Bolsonaro de presidente!`
     }
-
-
+    
 }
 
