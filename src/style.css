@@ -1,0 +1,70 @@
+:root{
+    --bg: #1E4E59;
+    --title: #618C8C;
+    --paragraph: #BFD9D6;
+    --box: #2D7352;
+    --box1: #72A68E;
+
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg);    
+    box-sizing: border-box;
+}
+
+.border{
+    border: solid 1px var(--title);
+    margin: .5em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+h1{
+    color: var(--paragraph);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    color: var(--box1);
+    margin-top: 3em;
+    
+    
+}
+
+h4{
+    font-weight: bold;
+    color: var(--title);
+}
+
+p{
+    color: var(--paragraph);
+}
+
+#area{
+    background: var(--box);
+    color: var(--paragraph);
+    width: 10em;
+    height: 7em;
+    border-radius: 1em;
+    /* text-transform: uppercase; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+#voto,
+#results,
+#vel,
+#res{
+    border: solid 1px var(--box1);
+    border-radius: 2em;
+    color: var(--paragraph);
+    width: 30%;
+    margin-top: 1em;
+    text-align: center;
+}
