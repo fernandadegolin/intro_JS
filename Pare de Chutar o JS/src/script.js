@@ -92,11 +92,33 @@ function nacao () {
     let pais = document.getElementById ('pais').value;
     let nacionalidade = document.getElementById ('results');
 
-    if (pais === "Brasil"){
+    if (pais === "Brasil" || "brasil"){
         nacionalidade.innerHTML = `Você mora no ${pais} e tem saudade da nossa ex... presidente DILMA!`
     } else {
         nacionalidade.innerHTML = `Seu pais é ${pais} e tem sorte de não ter Bolsonaro de presidente!`
-    }
+    }    
+}
+
+/* ========== Testando CONDICOES II ========== */
+
+let voto = document.getElementById ('votacao');
+    voto.addEventListener ('click', votar);
     
+    function votar (){
+        
+    let idade = document.getElementById('idade').value;
+    let possoVotar = document.getElementById ('voto');
+    let fraseVoto = possoVotar.innerHTML = `Você tem ${idade} anos!`
+
+
+    if (idade < 16){
+        possoVotar.innerHTML =  `${fraseVoto} <br> Não precisa votar.`
+
+    } else if (idade < 18 || idade > 65){
+        possoVotar.innerHTML = `${fraseVoto} <br> Seu voto é opcional.`
+
+    } else {
+        possoVotar.innerHTML = `${fraseVoto} <br> Seu voto é obrigatorio.`;
+    }
 }
 
