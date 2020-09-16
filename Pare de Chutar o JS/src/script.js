@@ -63,8 +63,8 @@ function somar() {
 
 /* ========== Testando CONDICOES ========== */
 
-let botao = document.getElementById('medir');
-botao.addEventListener('click', medir);
+const botao = document.getElementById('medir');
+    botao.addEventListener('click', medir);
 
 function medir() {
 
@@ -99,7 +99,7 @@ function nacao () {
     }    
 }
 
-/* ========== Testando CONDICOES II ========== */
+/* ========== Testando CONDICOES ANINHADAS ========== */
 
 let voto = document.getElementById ('votacao');
     voto.addEventListener ('click', votar);
@@ -122,3 +122,4 @@ let voto = document.getElementById ('votacao');
     }
 }
 
+/* ========== Testando CONDICOES MULTIPLAS ========== */
