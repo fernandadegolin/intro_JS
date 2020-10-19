@@ -1,4 +1,4 @@
-<h1>Introdução - JavaScript</h1>
+<h2>Introdução - JavaScript</h2>
 
 <p>Aqui será adicionado exercícios introdutórios em JS.
 O intuito é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
