@@ -39,7 +39,6 @@ function sair() {
 }
 
 /* ========== Testando OPERADORES ========== */
-
 let button = document.getElementById('button');
 button.addEventListener('click', somar);
 
