@@ -12,7 +12,7 @@ let tipoFloat = 49.5;
 // booleanos (true/falso) 
 let tipoBooleano = true;
 
-
+//exemplos
 let tudoJunto = (tipoString + (', ') + tipoNumero);
 let tudoMisturado = (tipoFloat == 49);
 
