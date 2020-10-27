@@ -123,3 +123,4 @@ let voto = document.getElementById ('votacao');
 }
 
 /* ========== Testando CONDICOES MULTIPLAS ========== */
+
