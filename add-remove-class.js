@@ -7,6 +7,6 @@
         se a classe existe, ele remove
         se a classe não existe, ele adiciona
     
-        
+  
 // Visualizar no navegador:
     console.log(itemLi)
