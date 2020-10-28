@@ -8,7 +8,6 @@ function populateUFs() {
         .then(states => {
             ufSelect.innerHTML = `<option value="1">Valor</option>`
         })
- 
 }
 
 populateUFs()
