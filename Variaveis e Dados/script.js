@@ -16,5 +16,6 @@ let tipoBooleano = true;
 let tudoJunto = (tipoString + (', ') + tipoNumero);
 let tudoMisturado = (tipoFloat == 49);
 
+
 console.log(tudoJunto);
 console.log(tudoMisturado);
