@@ -11,7 +11,6 @@ function populateUFs() {
 }
 
 populateUFs()
-
 *
 //opção 1 de escrita 'inteira'
     .then(function (resp) {
