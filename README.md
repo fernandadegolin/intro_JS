@@ -3,7 +3,7 @@
 <p>Aqui será adicionado exercícios introdutórios em JS.
 O intuito é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
 
-![javascript](https://github.com/reprograma/On3-javascript/blob/master/images/javascript.gif)
+![javascript](https://github.com/reprograma/On3-javascript/blob/master/images/javascript.gif) 
 
 <ul>
   <li><b>Variáveis e Dados</b></li>
