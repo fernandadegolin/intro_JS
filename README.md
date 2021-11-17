@@ -12,7 +12,7 @@ O intuito é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
   <li><b>Validação de Email</b></li>
   <li><b>Pare de chutar o JS</b>
    
-  </li>
+  </li>. 
  <lo>Teste de JS</lo>
   
 </ul>
