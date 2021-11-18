@@ -6,7 +6,7 @@ O intuito é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
    
 <ul> 
   <li><b>Variáveis e Dados</b></li>
-  <li><b>Adicionar e Remover Classes</b></li>
+  <li><b>Adicionar e Remover Classes</b></li> 
   <li><b>Concatenar Resumido</b></li>
   <li><b>Funções Resumidas</b></li> 
   <li><b>Validação de Email</b></li>
