@@ -1,5 +1,5 @@
 // let nome = Number(prompt("Digite um numero?"));
-// let n1 = 2
+// let n1 = 2 
 // let soma = nome + n1
 
 // alert(`É um grande prazer ter você ${soma}`)
