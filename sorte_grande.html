@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorte Grande</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Números da Sorte</h1>
+
+        <div class="button-sorteio">
+            <button id="send" onclick="draw()">SORTEAR</button>
+            <h1 class="sorteados" id="sorteados"></h1>
+        </div>
+
+        <div class="container-sorteados">
+            <h4 class="sub-title">Todos os Sorteados</h4>
+            <button onclick="show()">Ver</button>
+            <p id="todos"></p>
+
+            <button class="reset" onClick="window.location.reload();">
+                Reiniciar
+            </button>
+        </div>
+
+        <footer>
+            <p>build - fernanda degolin</p>
+        </footer>
+    </div>
+
+    <script>
+        let secrets = [];
+        console.log(secrets, "secrets");
+
+        let luck = document.getElementById("sorteados");
+
+        let todos = document.getElementById("todos");
+
+        function draw() {
+            let code = secrets.push(Math.round(Math.random() * 100));
+
+            for (var i = 0; i < secrets.length; i++)
+                luck.innerHTML = `${secrets[i]}`;
+        }
+
+        function show() {
+            todos.style.display = "block";
+
+            todos.innerHTML = `${secrets}`;
+        }
+
+        function reset() {
+            draw.reset();
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: white;
+            font-family: "Segoe UI";
+        }
+
+        .title {
+            margin-bottom: 47px;
+            text-align: center;
+            color: #0d0e26;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-shadow: 0.1em 0.1em 0.25em #1b1d40;
+        }
+
+        .sub-title {
+            text-align: center;
+            color: #0d0e26;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-shadow: 0.1em 0.1em 0.25em #1b1d40;
+        }
+
+        #todos {
+            font-size: larger;
+            letter-spacing: 1.5px;
+            font-weight: bolder;
+        }
+
+        .button-sorteio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            border: 2px solid;
+            border-image: linear-gradient(210deg,
+                    #1e1d6b,
+                    rgb(15, 199, 255),
+                    #910af2) 1;
+            width: 40%;
+            height: 41px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .sorteados {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            width: 150px;
+            height: 155px;
+            border-radius: 50%;
+            color: white;
+            /* background: #1b1d40; */
+            background: linear-gradient(329deg, rgba(27, 29, 64, 1) 0%, rgba(40, 43, 87, 1) 30%, rgba(35, 73, 121, 1) 57%, rgba(45, 105, 117, 1) 100%);
+            font-size: 100px;
+            padding: 5px;
+        }
+
+        .container-sorteados {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reset {
+            position: fixed;
+            bottom: 60px;
+            margin-top: 60px;
+            width: 32%;
+            font-size: 17px;
+            letter-spacing: 2px;
+            height: 62px;
+            background-color: #1B1D40;
+            color: white;
+            text-transform: lowercase;
+            font-weight: 100;
+            border-radius: 10px;
+            border: inherit;
+            background: rgb(27, 29, 64);
+            background: linear-gradient(329deg, rgba(27, 29, 64, 1) 0%, rgba(40, 43, 87, 1) 30%, rgba(35, 73, 121, 1) 57%, rgba(45, 105, 117, 1) 100%);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            font-size: small;
+            letter-spacing: 2px;
+        }
+    </style>
+</body>
+
+</html>
