@@ -10,7 +10,7 @@ O intuito é desenvolver exercícios e ajudar na fixação de aprendizado:</p>
   <li><b>Concatenar Resumido</b></li>
   <li><b>Funções Resumidas</b></li>  
   <li><b>Validação de Email</b></li>  
-  <li><b>Pare de chutar o JS</b>
+  <li><b>Pare de chutar o JS</b> 
       
   </li>. 
  <lo>Teste de JS</lo>
